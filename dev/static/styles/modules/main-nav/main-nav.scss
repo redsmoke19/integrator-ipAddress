@@ -1,0 +1,22 @@
+.nav {
+  &__inner {
+    align-items: center;
+    display: flex;
+  }
+  &__link {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    &:not(:last-child) {
+      @include adaptiv-value(margin-right, 40, 15, 3);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      width: calc(100% + 10px);
+      height: calc(100% + 10px);
+      top: -5px;
+      left: -5px;
+    }
+  }
+}

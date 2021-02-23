@@ -4,7 +4,6 @@ const plumber = require('gulp-plumber');
 const pug = require('gulp-pug');
 const argv = require('yargs').argv;
 const gulpif = require('gulp-if');
-const webphtml = require('gulp-webp-html');
 
 // Преобразуем Pug в HTML
 

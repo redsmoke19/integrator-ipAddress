@@ -37,7 +37,9 @@ module.exports = function serve(cb) {
   gulp
     .watch('dev/static/js/**/*.js', gulp.series(script))
     .on('change', server.reload);
-  gulp.watch('dev/pug/**/*.pug', gulp.series(pug2html));
+  gulp
+    .watch('dev/pug/**/*.pug', gulp.series(pug2html))
+    .on('change', server.reload);
   gulp.watch('dist/*.html').on('change', server.reload);
 
   return cb();

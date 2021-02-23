@@ -1,14 +1,20 @@
 // Colors
 $white: #fff;
 $black: #000;
+$text-grey-color: #999999;
+$text-yellow-color: #ffa800;
 
 // Sizes
 $base-font-size: 16px;
 
-$tablet: 768;
-$large: 1024;
-$desktop: 1280;
+$tablet: 768px;
+$desktop: 1280px;
+$large: 1920px;
 
-$content: 1000px;
+$content: 1024px;
 
 // Fonts
+$base-font: 'Open Sans', Arial, sans-serif;
+$second-font: 'Open Sans Condensed', Arial, sans-serif;
+$title-font: 'Poiret One', sans-serif;
+$decor-font: 'Caveat', sans-serif;

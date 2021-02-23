@@ -1,1 +1,20 @@
-header { flex: 0 0 auto; }
+.header {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  left: 0;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  @media screen and (min-width: $tablet) {
+    padding: 25px 40px;
+  }
+  &__link {
+    display: block;
+    margin-right: 15px;
+  }
+}
