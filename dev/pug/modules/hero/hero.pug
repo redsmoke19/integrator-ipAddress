@@ -6,10 +6,10 @@ section.hero
 		.hero__megagroup
 			span.hero__aliance в альянсе с
 			+icon('icon-megagroup', 'hero__icon', '115', '16')
-	h1.hero__title Мы предоставляем блоки #[span.hero__title--text-big v4 IP-адресов] #[span.hero__title--text-yellow аренда и покупка]
-	p.hero__text Компания «Integrator.Digital» предлагает купить или арендовать IP-адреса V4
-	form.hero__form(action="" method="post")
-		input.hero__input(type="tel" placeholder="Телефон")
-		button.button.hero__button.button--transparent(type="submit") Позвоните мне
-			+icon('icon-arrow', 'hero__icon hero__icon--arrow', '7', '12')
-
+	.container
+		h1.hero__title Мы предоставляем <b data-da=".hero__title--text-big,1280,0">блоки </b> #[span.hero__title--text-big <b>v4 IP-адресов</b>] #[span.hero__title--text-yellow аренда и покупка]
+		p.hero__text Компания «Integrator.Digital» предлагает купить или арендовать IP-адреса V4
+		form.hero__form(action="" method="post")
+			input.hero__input._simple-phone(type="tel" placeholder="Телефон")
+			button.button.hero__button.button--transparent(type="submit") Позвоните мне
+				+icon('icon-arrow', 'hero__icon hero__icon--arrow', '7', '12')

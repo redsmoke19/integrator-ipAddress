@@ -3,12 +3,18 @@
   background-color: $text-yellow-color;
   border: none;
   border-radius: 30px;
-  display: flex;
   color: $white;
+  cursor: pointer;
+  display: flex;
   font-size: 18px;
   font-weight: 400;
+  opacity: 1;
   padding: 18px 30px;
+  transition: opacity ease-out 0.15s;
   width: auto;
+  &:hover {
+    opacity: 0.6;
+  }
   svg {
     margin-left: 10px;
   }

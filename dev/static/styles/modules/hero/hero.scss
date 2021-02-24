@@ -33,6 +33,24 @@
       background-size: cover;
     }
   }
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/common/hero-desktop@1x.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0 112px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url('../images/common/hero-desktop@2x.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
   &__top {
     align-items: flex-start;
     display: flex;
@@ -42,12 +60,26 @@
       align-items: center;
       padding: 0 40px 512px;
     }
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 184px;
+    }
   }
   &__phones {
     display: flex;
     flex-direction: column;
     @media screen and (min-width: $tablet) {
       flex-direction: row;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 12px;
+        background-color: $white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
   &__tel {
@@ -63,19 +95,8 @@
       color: $text-yellow-color;
     }
     @media screen and (min-width: $tablet) {
-      position: relative;
       &:not(:last-child) {
         margin-right: 20px;
-        &::after {
-          content: '';
-          position: absolute;
-          width: 1px;
-          height: 12px;
-          background-color: $white;
-          top: 50%;
-          right: -10px;
-          transform: translateY(-50%);
-        }
       }
     }
   }
@@ -100,12 +121,18 @@
     font-family: $title-font;
     line-height: 1.16;
     margin: 0 0 20px 0;
-    padding: 0 20px;
     @include adaptiv-font(54, 24, 3);
+    b {
+      font-weight: normal;
+    }
     @media screen and (min-width: $tablet) {
       font-size: 60px;
       margin: 0 0 33px 0;
-      padding: 0 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 54px;
+      line-height: 63px;
+      letter-spacing: -0.02em;
     }
     &--text-big {
       display: block;
@@ -113,6 +140,11 @@
       @include adaptiv-font(108, 40, 3);
       @media screen and (min-width: $tablet) {
         font-size: 100px;
+      }
+      @media screen and (min-width: $desktop) {
+        font-size: 108px;
+        line-height: 0.75;
+        letter-spacing: 0;
       }
     }
     &--text-yellow {
@@ -123,26 +155,25 @@
       @media screen and (min-width: $tablet) {
         font-size: 60px;
       }
+      @media screen and (min-width: $desktop) {
+        letter-spacing: 0;
+      }
     }
   }
   &__text {
     color: $white;
     font-weight: 400;
     margin: 0 0 35px 0;
-    padding: 0 20px;
     @media screen and (min-width: $tablet) {
       margin: 0 0 41px 0;
-      padding: 0 40px;
     }
   }
   &__form {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
     @media screen and (min-width: $tablet) {
       flex-direction: row;
-      padding: 0 40px;
     }
   }
   &__input {
@@ -160,6 +191,9 @@
     @media screen and (min-width: $tablet) {
       margin: 0 20px 0 0;
       width: 43%;
+    }
+    @media screen and (min-width: $desktop) {
+      width: 29%;
     }
   }
 }

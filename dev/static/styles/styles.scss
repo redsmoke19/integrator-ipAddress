@@ -58,6 +58,14 @@ input,
 select,
 button { outline: none; }
 
+a {
+  opacity: 1;
+  transition: opacity ease-out 0.15s;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -74,13 +82,13 @@ button { outline: none; }
 
 .container {
   margin: 0 auto;
-  max-width: $content;
   padding: 0 20px;
   width: 100%;
   @media screen and (min-width: $tablet) {
     padding: 0 40px;
   }
   @media screen and (min-width: $desktop) {
+    max-width: $content;
     padding: 0;
   }
 }

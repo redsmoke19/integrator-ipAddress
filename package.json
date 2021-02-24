@@ -43,6 +43,7 @@
     "gulp-w3c-html-validator": "^2.0.0",
     "gulp.spritesmith": "^6.11.0",
     "imagemin-pngquant": "^9.0.1",
+    "imask": "^6.0.7",
     "merge-stream": "^2.0.0",
     "node-sass": "^4.13.1",
     "stylelint": "^13.2.1",

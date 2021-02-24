@@ -1,0 +1,16 @@
+section.why-need
+	.container
+		h2.why-need__title.section__title Зачем вам нужен IP&ndash;адрес?
+	.why-need__wrapper
+		.why-need__inner
+			.container
+				.why-need__body
+					p.why-need__note Neque, turpis eget et amet, pretium.
+					p.why-need__text #[b IP-адрес — это уникальный идентификатор, который позволяет идентифицировать устройства, которые подключаются в сети интернет.]	Блоки внешних IP адресов нужны компаниям, которые предоставляют свои услуги в сети интернет. Это может быть оператор связи, хостинг провайдер или банк, которому важно иметь собственную защищенную сеть в соответствии с требованием безопасности. Если компании для осуществления деятельности требуется небольшое количество адресов (например для размещения какого-либо ресурса в сети интернет), то она, как правило, арендует их вместе с хостингом. Но когда требуется множество адресов - то выгоднее всего арендовать их блоками от / 24 (256 шт.)
+					a.why-need__link.button Заказать IP-адрес
+						+icon('icon-arrow', 'hero__icon hero__icon--arrow', '7', '12')
+		picture.why-need__picture
+			//- source(media="(min-width: )", srcset="")
+			source(media="(min-width: 768px)", srcset="static/images/content/why-need-tablet@1x.png 1x, static/images/content/why-need-tablet@2x.png 2x")
+			img.why-need__img(src="static/images/content/why-need@1x.png", alt="Блоки серверов", srcset="static/images/content/why-need@2x.png 2x" width="320" height="266")
+
