@@ -27,5 +27,17 @@
       });
     }
   };
+
+  const getOrderPhoneMask = function () {
+    const orderPhones = document.querySelectorAll('._order-phone');
+    const orderMaskOptions = {
+      mask: '+{7} ( 000 ) 000-00-00',
+      lazy: false,
+    };
+    orderPhones.forEach(item => {
+      let orderMask = IMask(item, orderMaskOptions);
+    });
+  };
   getSimplePhoneMask();
+  getOrderPhoneMask();
 })();

@@ -1,0 +1,46 @@
+.provide {
+  background-image: url('../images/common/provide-bg@1x.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0 60px;
+  position: relative;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url('../images/common/provide-bg@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &__icon {
+    display: block;
+    &--crow {
+      left: 50%;
+      position: absolute;
+      top: -55px;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+    &--logo {
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__text {
+    font-family: $second-font;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+    text-align: center;
+  }
+  &__logo {
+    margin: 0 0 23px 0;
+  }
+}
