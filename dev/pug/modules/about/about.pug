@@ -1,0 +1,23 @@
+section.about
+	.container
+		h2.about__title.section__title Коротко о технологии IP
+		p.about__note Dui et sit donec auctor et neque mattis nec, dui
+		ul.about__list.list-about
+			li.list-about__item
+				.list-about__top
+					+icon('icon-number-01', 'list-about__icon', '69', '51')
+					h3.list-about__name Что такое IPv4?
+				p.list-about__text Для выхода любого устройства в интернет используется IP адрес, а для передачи информации между устройствами используется протокол передачи данных. TCP/IPv4. Tristique venenatis, mollis mi et. Amet, ultrices nunc pretium convallis morbi neque, ut. Tellus consectetur commodo malesuada ultrices.
+			li.list-about__item
+				.list-about__top
+					+icon('icon-number-02', 'list-about__icon', '69', '51')
+					h3.list-about__name Как получить IP адреса?
+				p.list-about__text Основной недостаток технологии IPv4 заключается в лимитированности адресов. У компаний, предоставляющих свои услуги в интернете на данный момент нет никакого другого способа получить их, кроме как выкупить или взять в аренду у других компаний, участников рынка.
+			li.list-about__item
+				.list-about__top
+					+icon('icon-number-03', 'list-about__icon', '69', '51')
+					h3.list-about__name Чем IPv6 лучше IPv4?
+				p.list-about__text IPv6 — это обновленная версия протокола, которая решает основную проблему предыдущей версии IPv4: ограниченность адресного пространства. Почему не происходит переход на новый протокол? Это требует дополнительных вложений от операторов связи, поэтому переход замедлился.
+		.about__bottom
+			a.about__link.button.button--purple(href="#") Мы расскажем #[span вам] больше
+				+icon('icon-arrow', 'hero__icon hero__icon--arrow', '7', '12')

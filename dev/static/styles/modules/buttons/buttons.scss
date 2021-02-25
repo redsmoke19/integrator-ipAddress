@@ -7,9 +7,10 @@
   cursor: pointer;
   display: flex;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   opacity: 1;
   padding: 18px 30px;
+  text-decoration: none;
   transition: opacity ease-out 0.15s;
   width: auto;
   &:hover {
@@ -22,5 +23,8 @@
     background-color: transparent;
     border: 1px solid $white;
     padding: 17px 30px;
+  }
+  &--purple {
+    background-color: $bg-purple-color;
   }
 }

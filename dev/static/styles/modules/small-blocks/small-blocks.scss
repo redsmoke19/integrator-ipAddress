@@ -4,5 +4,12 @@
     font-weight: 300;
     line-height: 1;
     @include adaptiv-font(60, 40, 3);
+    &--white {
+      color: $white;
+    }
+    @media screen and (min-width: $tablet) {
+      font-size: 60px;
+      line-height: 82px;
+    }
   }
 }

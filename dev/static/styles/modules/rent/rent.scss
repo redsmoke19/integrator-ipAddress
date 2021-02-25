@@ -1,0 +1,123 @@
+.rent {
+  background-image: url('../images/common/rent@1x.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 23px 0 94px;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url('../images/common/rent@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/common/rent-tablet@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0 100px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url('../images/common/rent-tablet@2x.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/common/rent-desktop@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0 176px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url('../images/common/rent-desktop@2x.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__title {
+    margin: 0 0 13px 0;
+    @media screen and (min-width: $tablet) {
+      margin: 0 0 9px 0;
+      text-align: center;
+    }
+  }
+  &__text {
+    color: $white;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 0 24px 0;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      margin: 0 0 34px 0;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $tablet) {
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 100px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0;
+    }
+  }
+  &__item {
+    align-items: center;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &:not(:last-child) {
+      margin: 0 0 30px 0;
+      @media screen and (min-width: $tablet) {
+        margin: 0;
+      }
+    }
+    &:nth-child(-n + 2) {
+      @media screen and (min-width: $tablet) {
+        margin: 0 0 34px 0;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      flex: 0 0 45%;
+    }
+    @media screen and (min-width: $desktop) {
+      flex: 0 0 21.5%;
+    }
+  }
+  &__icon {
+    margin: 0 0 7px 0;
+  }
+  &__count {
+    color: $text-yellow-color;
+    font-family: $second-font;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0 0 7px 0;
+  }
+  &__argument {
+    font-weight: 300;
+    text-align: center;
+  }
+}
