@@ -2,6 +2,9 @@
   &__title {
     margin: 0 0 13px 0;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+    }
   }
   &__note {
     color: $text-brown-color;
@@ -11,35 +14,78 @@
     line-height: 1;
     margin: 0 0 30px 0;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 24px;
+      line-height: 1.4;
+      margin: 0 0 43px 0;
+    }
   }
   &__form {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    @media screen and (min-width: $tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 0 36px 0;
+    }
   }
   &__input {
     border: none;
     border-radius: 30px;
     color: $text-grey-color;
     font-weight: 300;
+    font-size: 18px;
     margin: 0 0 20px 0;
-    padding: 24px 30px;
+    padding: 18px 30px;
     width: 100%;
     &::placeholder {
       color: $text-grey-color;
     }
     &:last-of-type {
-      margin: 20px;
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+      width: 33%;
+      &:nth-child(-n+2) {
+        margin: 0 0 20px 0;
+      }
+      &:first-of-type {
+        margin: 0 20px 20px 0;
+      }
+      &:last-of-type {
+        margin: 0 20px 0 0;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      width: 22%;
+      &:nth-child(-n+2) {
+        margin: 0 20px 0 0;
+      }
+      &:first-of-type {
+        margin: 0 20px 0 0;
+      }
     }
   }
   &__submit {
     margin: 0 0 26px 0;
+    @media screen and (min-width: $tablet) {
+      margin: 0;
+    }
   }
   &__consent {
     color: $text-brown-color;
     font-size: 12px;
     line-height: 1.33;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0 178px;
+    }
   }
 }

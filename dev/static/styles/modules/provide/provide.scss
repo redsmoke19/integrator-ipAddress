@@ -16,6 +16,41 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/common/provide-bg-tablet@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0 80px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url('../images/common/provide-bg-tablet@2x.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/common/provide-bg-desktop@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url('../images/common/provide-bg-desktop@2x.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
   &__icon {
     display: block;
     &--crow {
@@ -27,11 +62,19 @@
     }
     &--logo {
       margin: 0 auto;
+      @media screen and (min-width: $desktop) {
+        height: 60px;
+        width: 420px;
+      }
     }
   }
   &__title {
     margin-bottom: 20px;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      line-height: 1;
+      padding: 0 114px;
+    }
   }
   &__text {
     font-family: $second-font;
@@ -39,8 +82,44 @@
     line-height: 1.5;
     margin: 0 0 17px 0;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0 0 24px 0;
+      position: relative;
+      padding: 0 13%;
+      z-index: 1;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 32px 0;
+      padding: 0 21.5%;
+    }
   }
   &__logo {
     margin: 0 0 23px 0;
+    @media screen and (min-width: $tablet) {
+      margin: 0 0 62px 0;
+      position: relative;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 39px 0;
+    }
+  }
+  &__leaf {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      bottom: -5px;
+      display: block;
+      position: absolute;
+      &--left {
+        left: -20px;
+      }
+      &--right {
+        right: -20px;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      bottom: 30px;
+    }
   }
 }

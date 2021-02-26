@@ -1,0 +1,12 @@
+section.order-ip
+	.container
+		.order
+			h2.order__title.section__title Закажите IP-адрес у нас
+			p.order__note Оставьте заявку, и наш специалист свяжется с вами
+			form.order__form(action="" method="post")
+				input.order__input.order__input--name(type="text" name="youName" placeholder="ФИО")
+				input.order__input.order__input--email(type="email" name="youMail" placeholder="E-mail")
+				input.order__input.order__input--phone._order-phone(type="tel" name="youPhone")
+				button.order__submit.button.button--purple(type="submit") Заказать
+					+icon('icon-arrow', 'hero__icon hero__icon--arrow', '7', '12')
+			p.order__consent Нажимая кнопку "Заказать", я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-Ф3 "О персональных данных", на условиях и для целей, определенных в Согласии на обработку персональных данных.

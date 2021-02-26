@@ -1,0 +1,205 @@
+.transfer {
+  padding: 23px 0 60px;
+  @media screen and (min-width: $tablet) {
+    padding: 50px 0 120px;
+  }
+  &__title {
+    margin: 0 0 2px 0;
+    text-align: center;
+  }
+  &__note {
+    color: $text-yellow-color;
+    font-family: $decor-font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 0 0 19px 0;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 30px;
+      margin: 0 0 11px 0;
+    }
+  }
+  &__box {
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 40px 0;
+      position: relative;
+      &::before {
+        background-color: #cccccc;
+        bottom: 20px;
+        content: '';
+        height: 1px;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+  &__wrapper {
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+    @media screen and (min-width: $tablet) {
+      align-items: center;
+      flex-direction: row;
+      margin: 0 0 55px 0;
+    }
+    @media screen and (min-width: $desktop) {
+      border-bottom: none;
+      margin: 0 auto;
+      max-width: $content;
+      padding: 0;
+      position: relative;
+      width: 100%;
+    }
+  }
+  &__content {
+    padding: 0 20px;
+    @media screen and (min-width: $tablet) {
+      flex: 0 0 100%;
+      order: 2;
+      padding: 0 40px;
+      transform: translateX(-50%);
+    }
+    @media screen and (min-width: $desktop) {
+      flex: 0 0 50%;
+      padding: 0 0 0 60px;
+      transform: translateX(0);
+    }
+  }
+  &__body {
+    @media screen and (min-width: $tablet) {
+      width: 44.2%;
+      margin: 0 0 0 auto;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+  &__text {
+    color: $text-light-grey-color;
+    font-family: $second-font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 18px;
+    }
+  }
+  &__picture {
+    @media screen and (min-width: $tablet) {
+      flex: 0 0 50%;
+      padding-bottom: 72%;
+      position: relative;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0;
+    }
+  }
+  &__img {
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    max-height: 400px;
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      height: 100%;
+      left: 0;
+      max-height: none;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    @media screen and (min-width: $desktop) {
+      height: auto;
+      position: relative;
+    }
+  }
+}
+
+.list-transfer {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    margin: 0 -30px;
+  }
+  &__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    &:last-child {
+      margin: 0;
+    }
+    @media screen and (min-width: $tablet) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0 0 26px 0;
+      position: relative;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      align-items: center;
+      margin: 0 30px;
+      width: 33.333%;
+      &:last-child {
+        margin: 0 30px;
+      }
+    }
+  }
+  &__number {
+    margin: 0 0 4px 0;
+    @media screen and (min-width: $tablet) {
+      left: 0;
+      margin: 0;
+      position: absolute;
+      top: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 14px 0;
+      position: relative;
+    }
+  }
+  &__title {
+    font-family: $second-font;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.08;
+    margin: 0 0 11px 0;
+    @media screen and (min-width: $tablet) {
+      padding-left: 148px;
+      text-align: left;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0 0 7px 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  &__text {
+    color: $text-light-grey-color;
+    font-family: $second-font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.35;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+      padding-left: 148px;
+      text-align: left;
+    }
+    @media screen and (min-width: $desktop) {
+      padding: 0;
+      text-align: center;
+    }
+  }
+}

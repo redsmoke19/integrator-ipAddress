@@ -1,0 +1,53 @@
+.order-ip {
+  background-image: url('../images/common/order-ip@1x.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 23px 0 97px;
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    background-image: url('../images/common/order-ip@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/common/order-ip-tablet@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0 78px;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url('../images/common/order-ip-tablet@2x.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/common/order-ip-desktop@1x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (-o-min-device-pixel-ratio: 2/1),
+      only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url('../images/common/order-ip-desktop@2x.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
