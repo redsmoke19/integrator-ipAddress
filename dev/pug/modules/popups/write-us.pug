@@ -1,0 +1,18 @@
+.popup.popup_write-us
+	.popup__content
+		.popup__body.write-us
+			.popup__close.write-us__close
+				+icon('icon-close', 'popup__close--icon', '15', '15')
+			h2.write-us__title.section__title Напишите нам
+			p.write-us__note И наш менеджер свяжется с вами в кратчайшие сроки
+			form.write-us__form.form-write-us
+				input.form-write-us__input.form-write-us__input--name(type="text" name="youNamePopup" placeholder="ФИО")
+				input.form-write-us__input.form-write-us__input--mail(type="email" name="youMailPopup" placeholder="E-mail")
+				input.form-write-us__input._order-phone.form-write-us__input--phone(type="tel" name="youPhonePopup")
+				textarea.form-write-us__textarea.form-write-us__input(name="youTextPopup" placeholder="Ваше сообщение")
+				.form-write-us__bottom
+					input.form-write-us__checkbox(type="checkbox" id="checkboxAcceptPopup" requared)
+					label.form-write-us__label(for="checkboxAcceptPopup") Нажимая кнопку, я даю согласие на обработку своих персональных данных и соглашаюсь с #[a(href="#") политикой конфиденциальности]
+					button.form-write-us__submit.button(type="submit") Отправить
+						+icon('icon-arrow', 'hero__icon hero__icon--arrow', '7', '12')
+			+icon('icon-popup-logo', 'write-us__logo', '170', '211')

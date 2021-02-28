@@ -16,6 +16,9 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.4;
+  &._lock {
+		overflow: hidden;
+	}
 }
 
 *,
