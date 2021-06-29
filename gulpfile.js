@@ -14,9 +14,4 @@ const { argv } = require('yargs');
 
 const dev = gulp.parallel(pug2html, script, vendors, styles, imageMinify, webP, spriteSVG, spritePNG, fonts);
 
-// exports.default = gulp.series(
-//   clean,
-//   dev,
-//   serve
-// );
 exports.default = argv.prod ? gulp.series(clean, dev) : gulp.series(clean, dev, serve);
